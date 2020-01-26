@@ -1,0 +1,208 @@
+.goods {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.goods-blocks {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goods-block {
+  margin: 2rem;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+  border-radius: 0.25rem;
+}
+
+.goods-blocks__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #efeeef;
+}
+
+.goods-blocks__title h2 {
+  margin: 1rem 0 1rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.goods-blocks__title form {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goods-blocks__input {
+  width: 100%;
+  padding: 0.4rem;
+  text-align: center;
+  color: #181818;
+  background: #ffffff;
+  border: none;
+  border-bottom: 1px solid #558076;
+}
+
+.goods-blocks__input focus,
+input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+.goods-blocks__button {
+  margin-left: 0.5rem;
+  padding: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 600;
+  background: #558076;
+  border: 1px solid #558076;
+  border-radius: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: all 0.2s ease-in;
+}
+
+.goods-blocks__button:hover {
+  opacity: 0.5;
+  transition: all 0.2s ease-in;
+}
+
+.goods-blocks__new-goods {
+  margin: 1rem 1.5rem 1rem 0;
+  padding: 0.4rem;
+  background: #558076;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  margin-left: 0.25rem;
+}
+
+.goods-blocks__new-goods i {
+  margin-right: 0.2rem;
+}
+
+.goods-blocks__new-goods:hover {
+  opacity: 0.5;
+  transition: all 0.2s ease-in;
+}
+
+.goods-blocks__text {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #efeeef;
+}
+
+.goods-blocks__text span {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #181818;
+}
+
+.goods-blocks__block-text:nth-child(1) {
+  border-top: 0px solid #efeeef;
+}
+
+.goods-blocks__block-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #efeeef;
+  border-top: 1px solid #efeeef;
+  padding: 1rem;
+}
+
+.goods-blocks__block-number {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goods-blocks__block-name {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goods-blocks__block-weight {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goods-blocks__block-control {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Подключение шрифтов */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+.goods-blocks__control-view {
+  cursor: pointer;
+  padding: 0.5rem;
+  background: #4863b2;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  margin-right: 0.25rem;
+}
+
+.goods-blocks__control-view:hover {
+  opacity: 0.5;
+  transition: all 0.2s ease-in;
+}
+
+.goods-blocks__control-delete {
+  border: none;
+  padding: 0.5rem;
+  background: #ec7789;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  margin-left: 0.25rem;
+}
+
+.goods-blocks__control-delete:focus {
+  outline: none;
+}
+
+.goods-blocks__control-delete:hover {
+  opacity: 0.5;
+  transition: all 0.2s ease-in;
+}

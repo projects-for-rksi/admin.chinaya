@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Подключение шрифтов */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+.login {
+  background: #000638;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.login-header {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-header img {
+  width: 20%;
+}
+
+.login-title {
+  width: 25%;
+}
+
+.login-title h1 {
+  text-align: center;
+  color: #558076;
+}
+
+.login-title p {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.login-form {
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.login-form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-return {
+  margin: 0.5rem 0 0.5rem 0;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.login-return i {
+  color: #558076;
+  transition: all 0.2s ease-in;
+}
+
+.login-return a {
+  margin-left: 0.5rem;
+  color: #558076;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+.login-return a:hover {
+  color: #ffffff;
+  transition: all 0.2s ease-in;
+}
+
+.login-form__input {
+  width: 90%;
+  height: 3rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  background: #000638;
+  border: 1px solid #558076;
+  border-radius: 0.25rem;
+}
+
+.login-form__input::placeholder {
+  color: #558076;
+}
+
+.login-form__input:-internal-autofill-selected {
+  background: #000638;
+}
+
+.login-form__input:focus {
+  outline: none;
+  border: 1px solid #ffffff;
+  background: #000638;
+}
+
+.image {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.image img {
+  height: 100vh;
+}
+
+.return-password {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.return-password a {
+  color: #558076;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease-in;
+}
+
+.return-password a:hover {
+  transition: all 0.2s ease-in;
+  color: #ffffff;
+}
+
+.login-form__button {
+  margin-top: 0.5rem;
+  width: 90%;
+  height: 3rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: #558076;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: all 0.2s ease-in;
+}
+
+.login-form__button:hover {
+  background: #ffffff;
+  color: #000000;
+  transition: all 0.2s ease-in;
+}
+
+.register-button {
+  margin-top: 0.5rem;
+}
+
+.login-modal-block {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.login-modal {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  background: #f80000;
+  border-radius: 0.25rem;
+  color: #ffffff;
+}
+
+/* Адаптация под все экраны */
+
+@media screen and (max-width: 1600px) {
+  .login-title {
+    width: 30%;
+  }
+
+  .login-form {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .login-title {
+    width: 32.5%;
+  }
+
+  .login-form {
+    width: 32.5%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .login-title {
+    width: 35%;
+  }
+
+  .login-form {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 1152px) {
+  .login-title {
+    width: 40%;
+  }
+
+  .login-form {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .login-title {
+    width: 42.5%;
+  }
+
+  .login-form {
+    width: 42.5%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .login-title {
+    width: 50%;
+  }
+
+  .login-form {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .login-title {
+    width: 70%;
+  }
+
+  .login-form {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .login-header img {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .login-title {
+    width: 90%;
+  }
+
+  .login-form {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .login-header img {
+    width: 30%;
+  }
+
+  .login-modal {
+    padding: 1rem;
+    margin-top: 0rem;
+    margin-right: 0rem;
+    border-radius: 0rem;
+    text-align: center;
+  }
+
+  .login-modal span {
+    text-align: center;
+  }
+}

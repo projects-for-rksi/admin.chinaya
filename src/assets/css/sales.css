@@ -1,0 +1,205 @@
+/* Подключение шрифтов */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+.sale {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sale__blocks {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sale__block {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+  border-radius: 0.25rem;
+}
+
+.sale__block:nth-child(1) {
+  margin: 2rem 1rem 2rem 2rem;
+}
+
+.sale__block:nth-child(2) {
+  margin: 2rem 2rem 2rem 1rem;
+}
+
+.sale__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #efeeef;
+}
+
+.sale__title h2 {
+  margin: 1rem 0 1rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.sale__block-text {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #efeeef;
+}
+
+.sale__block-text span {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #000000;
+}
+
+.sale__text span {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #181818;
+}
+
+.sale__description-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #efeeef;
+  border-top: 1px solid #efeeef;
+  padding: 1rem;
+}
+
+.sale__description-block:nth-child(1) {
+  border-top: 0px solid #efeeef;
+}
+
+.new-sale__description-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #efeeef;
+  border-top: 1px solid #efeeef;
+  padding: 1rem;
+}
+
+.new-sale__description-block:nth-child(1) {
+  border-top: 0px solid #efeeef;
+}
+
+.sale__number {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sale__code {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sale__value {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sale__delete {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sale__delete button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background: #ec7789;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  border: none;
+}
+
+.sale__delete button:hover {
+  opacity: 0.5;
+  transition: all 0.2s ease-in;
+}
+
+.sale__delete button:focus {
+  outline: none;
+}
+
+.new-sale__div-block {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sale__input {
+  width: 45%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.7rem;
+  border: none;
+  text-align: center;
+  border-bottom: 1px solid #558076;
+}
+
+.sale__input:focus,
+input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+.sale__button {
+  width: 90%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: #4863b2;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease-in;
+}
+
+.sale__button:hover {
+  background: #000000;
+  transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+/* Адаптация под все экраны */
+
+@media screen and (max-width: 1680px) {
+  .sale__block {
+    width: 80%;
+  }
+}

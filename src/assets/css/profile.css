@@ -1,0 +1,105 @@
+/* Подключение шрифтов */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+.user-profile__modal-block {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.user-profile__modal {
+  width: 35%;
+  background: #ffffff;
+  border-radius: 0.25rem;
+}
+
+.user-profile__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #efeeef;
+}
+
+.user-profile__title h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin: 1rem 0 1rem 1rem;
+}
+
+.user-profile__title i {
+  margin: 1rem 1rem 1rem 0;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.user-profile__user-block {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-profile__user-image {
+  width: 40%;
+}
+
+.user-profile__user-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.user-profile__user-information {
+  width: 45%;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile__input {
+  padding: 0.7rem;
+  border: none;
+  border-bottom: 1px solid #558076;
+}
+
+.user-profile__input:focus,
+input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+.user-profile__button {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: #558076;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease-in;
+}
+
+.user-profile__button:hover {
+  background: #000000;
+  transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+}
