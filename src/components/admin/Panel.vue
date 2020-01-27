@@ -14,7 +14,7 @@
       <nav class="panel-menu">
         <ul v-for="item in dataUser" v-bind:key="item.id" class="panel-menu__list">
           <li
-            @click="activeMenuTab = 1"
+            @click="activeMenuTab = 1, closeModalHeader()"
             class="panel-menu__list-item"
             v-bind:class="{ activemenu: activeMenuTab == 1 }"
           >
@@ -23,7 +23,7 @@
           </li>
           <li
             v-if="item.id_access_code >= 3"
-            @click="activeMenuTab = 2"
+            @click="activeMenuTab = 2, closeModalHeader()"
             class="panel-menu__list-item"
             v-bind:class="{ activemenu: activeMenuTab == 2 }"
           >
@@ -31,7 +31,7 @@
             <router-link to="/admin-control">Администраторы</router-link>
           </li>
           <li
-            @click="activeMenuTab = 3"
+            @click="activeMenuTab = 3, closeModalHeader()"
             class="panel-menu__list-item"
             v-bind:class="{ activemenu: activeMenuTab == 3 }"
           >
@@ -39,7 +39,7 @@
             <router-link to="/orders">Заказы</router-link>
           </li>
           <li
-            @click="activeMenuTab = 4"
+            @click="activeMenuTab = 4, closeModalHeader()"
             class="panel-menu__list-item"
             v-bind:class="{ activemenu: activeMenuTab == 4 }"
           >
@@ -47,7 +47,7 @@
             <router-link to="/categories">Категории</router-link>
           </li>
           <li
-            @click="activeMenuTab = 5"
+            @click="activeMenuTab = 5, closeModalHeader()"
             class="panel-menu__list-item"
             v-bind:class="{ activemenu: activeMenuTab == 5 }"
           >
@@ -55,7 +55,7 @@
             <router-link to="/goods">Товары</router-link>
           </li>
           <li
-            @click="activeMenuTab = 6"
+            @click="activeMenuTab = 6, closeModalHeader()"
             class="panel-menu__list-item"
             v-bind:class="{ activemenu: activeMenuTab == 6 }"
           >
@@ -185,6 +185,11 @@ export default {
       localStorage.removeItem("auth");
       localStorage.removeItem("access");
       this.$router.push("/");
+    },
+    closeModalHeader() {
+      if (this.width <= 1280) {
+        this.openHeaderForMobile = false;
+      }
     }
   }
 };

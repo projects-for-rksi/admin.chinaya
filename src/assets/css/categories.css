@@ -362,6 +362,55 @@
 
 @media screen and (max-width: 1680px) {
   .сategories-new {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .сategories-new {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .сategories-new {
+    width: 95%;
+    margin-top: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .сategories__blocks {
+    flex-direction: column;
+  }
+
+  .сategories__block {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .сategories__block-text {
+    display: none;
+  }
+
+  .сategories__description-block {
+    flex-direction: column;
+  }
+
+  .сategories__number {
+    width: 100%;
+    margin: 0.5rem;
+  }
+
+  .сategories__name {
+    width: 100%;
+    margin: 0.5rem;
+  }
+
+  .сategories__delete {
+    margin: 0.5rem;
+    width: 100%;
   }
 }

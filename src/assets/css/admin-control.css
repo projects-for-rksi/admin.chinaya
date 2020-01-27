@@ -2,543 +2,554 @@
 
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 .admin-control {
-    width: 100%;
-    margin: 2rem 2rem 2rem 2rem;
+  width: 100%;
+  margin: 2rem 2rem 2rem 2rem;
 }
 
 .admin-control__blocks {
-    margin: 2rem 2rem 0rem 2rem;
-    background: #ffffff;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
-    border-radius: 0.25rem;
+  margin: 2rem 2rem 0rem 2rem;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+  border-radius: 0.25rem;
 }
 
 .admin-control__title {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #efeeef;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #efeeef;
 }
 
 .admin-control__title h2 {
-    margin: 1rem 0 1rem 1.5rem;
-    font-size: 1.25rem;
-    font-weight: 400;
+  margin: 1rem 0 1rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 .admin-control__title form {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .admin-control__input {
-    width: 100%;
-    padding: 0.4rem;
-    color: #181818;
-    background: #ffffff;
-    border: none;
-    border-bottom: 1px solid #558076;
+  width: 100%;
+  padding: 0.4rem;
+  color: #181818;
+  background: #ffffff;
+  border: none;
+  border-bottom: 1px solid #558076;
 }
 
 .admin-control__input focus,
 input:focus {
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #000000;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000000;
 }
 
 .admin-control__button {
-    margin-left: 0.5rem;
-    padding: 0.4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    font-weight: 600;
-    background: #558076;
-    border: 1px solid #558076;
-    border-radius: 0.25rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    transition: all 0.2s ease-in;
+  margin-left: 0.5rem;
+  padding: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 600;
+  background: #558076;
+  border: 1px solid #558076;
+  border-radius: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: all 0.2s ease-in;
 }
 
 .admin-control__button:hover {
-    opacity: 0.5;
-    transition: all 0.2s ease-in;
+  opacity: 0.5;
+  transition: all 0.2s ease-in;
 }
 
 .admin-control__new-goods {
-    margin: 1rem 1.5rem 1rem 0;
-    padding: 0.4rem;
-    background: #ebba16;
-    color: #ffffff;
-    border-radius: 0.25rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.2s ease-in;
-    margin-left: 0.25rem;
+  margin: 1rem 1.5rem 1rem 0;
+  padding: 0.4rem;
+  background: #ebba16;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  margin-left: 0.25rem;
 }
 
 .admin-control__new-goods i {
-    margin-right: 0.2rem;
+  margin-right: 0.2rem;
 }
 
 .admin-control__new-goods:hover {
-    opacity: 0.5;
-    transition: all 0.2s ease-in;
+  opacity: 0.5;
+  transition: all 0.2s ease-in;
 }
 
 .admin-control__text {
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #efeeef;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #efeeef;
 }
 
 .admin-control__text span {
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    color: #181818;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #181818;
 }
 
 .admin-control__block-text:nth-child(1) {
-    border-top: 0px solid #efeeef;
+  border-top: 0px solid #efeeef;
 }
 
 .admin-control__block-text {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #efeeef;
-    border-top: 1px solid #efeeef;
-    padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #efeeef;
+  border-top: 1px solid #efeeef;
+  padding: 1rem;
 }
 
 .admin-control__block-number {
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .admin-control__image {
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .admin-control__image img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .admin-control__image span {
-    margin-left: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .admin-control__block-date {
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .admin-control__block-control {
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .admin-control__control-view {
-    padding: 0.5rem;
-    background: #4863b2;
-    color: #ffffff;
-    border-radius: 0.25rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.2s ease-in;
-    margin-right: 0.25rem;
+  padding: 0.5rem;
+  background: #4863b2;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  margin-right: 0.25rem;
 }
 
 .admin-control__control-view:hover {
-    opacity: 0.5;
-    transition: all 0.2s ease-in;
+  opacity: 0.5;
+  transition: all 0.2s ease-in;
 }
 
 .admin-control__control-delete {
-    padding: 0.5rem;
-    background: #ec7789;
-    color: #ffffff;
-    border-radius: 0.25rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.2s ease-in;
-    margin-left: 0.25rem;
+  padding: 0.5rem;
+  background: #ec7789;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  margin-left: 0.25rem;
 }
 
 .admin-control__control-delete:hover {
-    opacity: 0.5;
-    transition: all 0.2s ease-in;
+  opacity: 0.5;
+  transition: all 0.2s ease-in;
 }
 
 .noactive {
-    display: none !important;
+  display: none !important;
 }
 
 .admin-new__add {
-    margin: 2rem 2rem 2rem 2rem;
-    width: 30%;
-    background: #ffffff;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
-    border-radius: 0.25rem;
+  margin: 2rem 2rem 2rem 2rem;
+  width: 30%;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+  border-radius: 0.25rem;
 }
 
 .admin__title {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #efeeef;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #efeeef;
 }
 
 .admin-delete__attention {
-    margin: 2rem;
-    width: 100%;
-    background: #ffffff;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
-    border-radius: 0.25rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  margin: 2rem;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+  border-radius: 0.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .admin-delete__attention i {
-    margin-left: 1.5rem;
-    color: #f80000;
-    font-size: 1.2rem;
+  margin-left: 1.5rem;
+  color: #f80000;
+  font-size: 1.2rem;
 }
 
 .admin-delete__attention span {
-    margin: 1rem;
-    color: #000000;
+  margin: 1rem;
+  color: #000000;
 }
 
 .admin__title h2 {
-    margin: 1rem 0 1rem 1.5rem;
-    font-size: 1.25rem;
-    font-weight: 400;
+  margin: 1rem 0 1rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 .admin__block-text {
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #efeeef;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #efeeef;
 }
 
 .admin__block-text span {
-    width: 33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    color: #000000;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #000000;
 }
 
 .admin__text span {
-    width: 33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    color: #181818;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #181818;
 }
 
 .admin__description-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #efeeef;
-    border-top: 1px solid #efeeef;
-    padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #efeeef;
+  border-top: 1px solid #efeeef;
+  padding: 1rem;
 }
 
 .admin__description-block:nth-child(1) {
-    border-top: 0px solid #efeeef;
+  border-top: 0px solid #efeeef;
 }
 
 .new-admin__description-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #efeeef;
-    border-top: 1px solid #efeeef;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #efeeef;
+  border-top: 1px solid #efeeef;
+  padding: 1rem;
 }
 
 .new-admin__description-block:nth-child(1) {
-    border-top: 0px solid #efeeef;
+  border-top: 0px solid #efeeef;
 }
 
 .admin__number {
-    width: 33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .admin__name {
-    width: 33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .admin__delete {
-    width: 33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .admin__delete button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem;
-    background: #ec7789;
-    color: #ffffff;
-    border-radius: 0.25rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.2s ease-in;
-    cursor: pointer;
-    border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background: #ec7789;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  border: none;
 }
 
 .admin__delete button:hover {
-    opacity: 0.5;
-    transition: all 0.2s ease-in;
+  opacity: 0.5;
+  transition: all 0.2s ease-in;
 }
 
 .admin__delete button:focus {
-    outline: none;
+  outline: none;
 }
 
 .admin__input {
-    width: 91%;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    padding: 0.7rem;
-    border: none;
-    text-align: center;
-    border-bottom: 1px solid #558076;
+  width: 91%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.7rem;
+  border: none;
+  text-align: center;
+  border-bottom: 1px solid #558076;
 }
 
 .admin__input:focus {
-    border-bottom: 1px solid #558076;
+  border-bottom: 1px solid #558076;
 }
 
 .admin__input:active {
-    border-bottom: 1px solid #558076;
+  border-bottom: 1px solid #558076;
 }
 
 .admin__button {
-    width: 95%;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    padding: 0.7rem;
-    border: none;
-    border-radius: 0.25rem;
-    background: #4863b2;
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 0.9rem;
-    transition: all 0.2s ease-in;
+  width: 95%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: #4863b2;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease-in;
 }
 
 .admin__button:hover {
-    background: #000000;
-    transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
+  background: #000000;
+  transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
-
 
 /* Адаптация под все экраны */
 
 @media screen and (max-width: 1440px) {
-    .admin-new__add {
-        width: 40%;
-    }
+  .admin-new__add {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 950px) {
-    .admin-control__block-control {
-        flex-direction: column;
-    }
-    .admin-control__control-view {
-        width: 60%;
-        text-align: center;
-        margin-right: 0rem;
-        margin-bottom: 0.25rem;
-    }
-    .admin-control__control-delete {
-        width: 60%;
-        text-align: center;
-        margin-left: 0rem;
-        margin-top: 0.25rem;
-    }
-    .admin-new__add {
-        width: 50%;
-    }
+  .admin-control__block-control {
+    flex-direction: column;
+  }
+  .admin-control__control-view {
+    width: 60%;
+    text-align: center;
+    margin-right: 0rem;
+    margin-bottom: 0.25rem;
+  }
+  .admin-control__control-delete {
+    width: 60%;
+    text-align: center;
+    margin-left: 0rem;
+    margin-top: 0.25rem;
+  }
+  .admin-new__add {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 850px) {
-    .admin-control__image span {
-        width: 55%;
-        margin-left: 0rem;
-        text-align: center;
-    }
+  .admin-control__image span {
+    width: 55%;
+    margin-left: 0rem;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 742px) {
-    .panel-status__block {
-        width: 35%;
-    }
-    .admin-control__block-text {
-        flex-direction: column;
-    }
-    .admin-control__text span {
-        margin: 0.5rem;
-        font-size: 1.1rem;
-    }
-    .admin-control__text span {
-        width: 100%;
-        text-align: center;
-    }
-    .admin-control__text {
-        display: none;
-    }
-    .description-block__number {
-        margin: 0.5rem;
-        width: 100%;
-    }
-    .admin-control__image {
-        margin: 0.5rem;
-        width: 100%;
-    }
-    .last-applications__block-text span {
-        width: 100%;
-    }
-    .admin-control__block-number {
-        margin: 1rem;
-        width: 100%;
-    }
-    .admin-control__block-date {
-        margin: 0.5rem;
-        width: 100%;
-    }
-    .admin-control__image span {
-        width: auto;
-        margin-left: 0.5rem;
-    }
-    .admin-control__block-control {
-        flex-direction: row;
-    }
-    .admin-control__block-control {
-        width: 100%;
-        margin: 1rem;
-    }
-    .admin-control__control-view {
-        width: 30%;
-        margin-bottom: 0rem;
-        margin-right: 0.25rem;
-    }
-    .admin-control__control-delete {
-        width: 30%;
-        margin-top: 0rem;
-        margin-left: 0.25rem;
-    }
+  .panel-status__block {
+    width: 35%;
+  }
+  .admin-control__block-text {
+    flex-direction: column;
+  }
+  .admin-control__text span {
+    margin: 0.5rem;
+    font-size: 1.1rem;
+  }
+  .admin-control__text span {
+    width: 100%;
+    text-align: center;
+  }
+  .admin-control__text {
+    display: none;
+  }
+  .description-block__number {
+    margin: 0.5rem;
+    width: 100%;
+  }
+  .admin-control__image {
+    margin: 0.5rem;
+    width: 100%;
+  }
+  .last-applications__block-text span {
+    width: 100%;
+  }
+  .admin-control__block-number {
+    margin: 1rem;
+    width: 100%;
+  }
+  .admin-control__block-date {
+    margin: 0.5rem;
+    width: 100%;
+  }
+  .admin-control__image span {
+    width: auto;
+    margin-left: 0.5rem;
+  }
+  .admin-control__block-control {
+    flex-direction: row;
+  }
+  .admin-control__block-control {
+    width: 100%;
+    margin: 1rem;
+  }
+  .admin-control__control-view {
+    width: 30%;
+    margin-bottom: 0rem;
+    margin-right: 0.25rem;
+  }
+  .admin-control__control-delete {
+    width: 30%;
+    margin-top: 0rem;
+    margin-left: 0.25rem;
+  }
 }
 
 @media screen and (max-width: 650px) {
-    .admin-new__add {
-        width: 70%;
-    }
+  .admin-new__add {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .admin-new__add {
-        width: 87.5%;
-    }
+  .admin-new__add {
+    width: 87.5%;
+  }
 }
 
 @media screen and (max-width: 450px) {
-    .admin-new__add {
-        width: 86%;
-    }
+  .admin-new__add {
+    width: 86%;
+  }
 }
 
 @media screen and (max-width: 425px) {
-    .admin-new__add {
-        width: 85%;
-    }
+  .admin-new__add {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 415px) {
-    .admin-control__control-view {
-        width: 40%;
-    }
-    .admin-control__control-delete {
-        width: 40%;
-    }
+  .admin-control__control-view {
+    width: 40%;
+  }
+  .admin-control__control-delete {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .admin-new__add {
+    width: 83%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .admin-new__add {
+    width: 82.5%;
+  }
 }
 
 @media screen and (max-width: 350px) {
-    .admin-new__add {
-        width: 82%;
-    }
-    .admin__title h2 {
-        text-align: center;
-        margin: 1rem;
-    }
+  .admin-new__add {
+    width: 82%;
+  }
+  .admin__title h2 {
+    text-align: center;
+    margin: 1rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
-    .admin-new__add {
-        width: 80%;
-    }
+  .admin-new__add {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 335px) {
-    .admin-control__control-view {
-        width: 90%;
-        margin-bottom: 0.25rem;
-        margin-right: 0rem;
-    }
-    .admin-control__control-delete {
-        width: 90%;
-        margin-top: 0.25rem;
-        margin-left: 0rem;
-    }
-    .admin-control__block-control {
-        flex-direction: column;
-    }
+  .admin-control__control-view {
+    width: 90%;
+    margin-bottom: 0.25rem;
+    margin-right: 0rem;
+  }
+  .admin-control__control-delete {
+    width: 90%;
+    margin-top: 0.25rem;
+    margin-left: 0rem;
+  }
+  .admin-control__block-control {
+    flex-direction: column;
+  }
 }

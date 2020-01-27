@@ -206,3 +206,122 @@ input:focus {
   opacity: 0.5;
   transition: all 0.2s ease-in;
 }
+
+/* Адаптация под все экраны */
+
+@media screen and (max-width: 1440px) {
+  .goods-blocks__block-name {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .goods-blocks__block-control {
+    flex-direction: column;
+  }
+
+  .goods-blocks__control-view {
+    width: 50%;
+    margin-bottom: 0.25rem;
+    margin-right: 0rem;
+    text-align: center;
+  }
+
+  .goods-blocks__control-delete {
+    width: 56.5%;
+    margin-top: 0.25rem;
+    margin-left: 0rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .goods-blocks__text {
+    display: none;
+  }
+
+  .goods-blocks__title {
+    flex-direction: column;
+  }
+
+  .goods-blocks__title h2 {
+    margin: 2rem;
+    margin-bottom: 1rem !important;
+  }
+
+  .goods-blocks__title form {
+    margin-top: 0.5rem !important;
+    width: 40%;
+  }
+
+  .goods-blocks__new-goods {
+    margin: 1.5rem;
+  }
+
+  .goods-blocks__block-text {
+    flex-direction: column;
+  }
+
+  .goods-blocks__block-number {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .goods-blocks__block-name {
+    width: 85%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .goods-blocks__block-weight {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .goods-blocks__block-control {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .goods-blocks__control-view {
+    width: 50%;
+  }
+
+  .goods-blocks__control-delete {
+    width: 52.5%;
+  }
+
+  .goods-blocks__block-text {
+    padding: 0rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .goods-blocks__control-delete {
+    width: 54.5%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .goods-blocks__control-delete {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .goods-blocks__title form {
+    margin-top: 0.5rem !important;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .goods-blocks__control-delete {
+    width: 56%;
+  }
+}

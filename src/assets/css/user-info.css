@@ -4,9 +4,11 @@
 
 .user-info__modal-block {
   position: fixed;
-  z-index: 100;
+  z-index: 999;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -179,9 +181,30 @@
   }
 }
 
+@media screen and (max-width: 411px) {
+  .user-info__user-image img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .user-info__modal {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .user-info__user-image img {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .user-info__user-image img {
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -199,5 +222,17 @@
 @media screen and (max-width: 336px) {
   .user-info__title h3 {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .user-info__user-text {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .user-info__user-image img {
+    width: 125px;
+    height: 125px;
   }
 }

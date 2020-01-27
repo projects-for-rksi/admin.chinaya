@@ -205,3 +205,29 @@
   transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
+
+/* Адаптация под все экраны */
+
+@media screen and (max-width: 500px) {
+  .create-goods__block_create {
+    margin: 1rem;
+  }
+
+  .common-return {
+    margin: 2rem 2rem 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .create-goods__title {
+    flex-direction: column;
+  }
+
+  .create-goods__title h2 {
+    margin: 1rem;
+  }
+
+  .create-goods__title span {
+    margin: 1rem;
+  }
+}

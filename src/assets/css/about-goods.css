@@ -322,3 +322,58 @@
     width: 35%;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .admin-new__add-block {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-goods__information-text {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .about-goods__block-text {
+    margin-left: 0rem;
+    width: 100%;
+  }
+
+  .about-goods__block-photo {
+    width: 40%;
+    margin-bottom: 1.5rem;
+  }
+
+  .admin-new__add2 {
+    flex-direction: column;
+  }
+
+  .admin-new__add-block {
+    width: 100%;
+  }
+
+  .admin-new__add-block:nth-child(2) {
+    margin-left: 0rem;
+    margin-top: 0rem !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-goods__block-photo {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-goods__block-photo {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about-goods__block-photo {
+    width: 100%;
+  }
+}
