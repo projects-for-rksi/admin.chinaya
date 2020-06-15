@@ -131,11 +131,11 @@ export default {
         });
     },
     async submitHandler() {
-      if (this.name_categories != "" && this.value != "") {
+      if (this.name_categories != "" && this.value2 != "") {
         axios
           .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/new-categories", {
             name_categories: this.name_categories,
-            refers_category: this.value
+            refers_category: this.value2
           })
           .then(responce => {
             this.categories = responce.data;
