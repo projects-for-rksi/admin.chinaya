@@ -34,6 +34,7 @@
 </style>
 
 <script>
+import { API_URL } from "@/api.config";
 import axios from "axios";
 
 export default {
@@ -52,7 +53,7 @@ export default {
     async submitHandler() {
       if (this.email != "" && this.password != "") {
         axios
-          .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/login", {
+          .post(`${API_URL}/api/login`, {
             email: this.email,
             password: this.password
           })

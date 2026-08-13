@@ -84,6 +84,7 @@
 </style>
 
 <script>
+import { API_URL } from "@/api.config";
 import axios from "axios";
 
 export default {
@@ -106,12 +107,12 @@ export default {
   }),
   created() {
     axios
-      .get("https://api.xn----7sba9au1d3c.xn--p1ai/api/categories")
+      .get(`${API_URL}/api/categories`)
       .then(responce => {
         this.categoriesProduct = responce.data;
       });
     axios
-      .get("https://api.xn----7sba9au1d3c.xn--p1ai/api/status-product")
+      .get(`${API_URL}/api/status-product`)
       .then(responce => {
         this.statusProduct = responce.data;
       });
@@ -139,7 +140,7 @@ export default {
         this.this_is_new != ""
       ) {
         axios
-          .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/create-goods", {
+          .post(`${API_URL}/api/create-goods`, {
             title: this.title,
             description: this.description,
             quantity: this.quantity,

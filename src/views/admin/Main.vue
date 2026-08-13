@@ -90,6 +90,7 @@
 </template>
 
 <script>
+import { API_URL } from "@/api.config";
 import axios from "axios";
 
 export default {
@@ -105,7 +106,7 @@ export default {
   }),
   created() {
     axios
-      .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/panel-info")
+      .post(`${API_URL}/api/panel-info`)
       .then(responce => {
         if (responce.data["users"] != null) {
           this.users = responce.data["users"];
@@ -132,7 +133,7 @@ export default {
         }
       });
     axios
-      .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/last-orders")
+      .post(`${API_URL}/api/last-orders`)
       .then(responce => {
         this.dataOrders = responce.data;
       });

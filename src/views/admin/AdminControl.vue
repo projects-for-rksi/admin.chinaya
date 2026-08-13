@@ -122,6 +122,7 @@
 </style>
 
 <script>
+import { API_URL } from "@/api.config";
 import axios from "axios";
 
 export default {
@@ -138,13 +139,13 @@ export default {
   }),
   created() {
     axios
-      .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/test-auth", {
+      .post(`${API_URL}/api/test-auth`, {
         api_token: localStorage.getItem("api_token")
       })
       .then(responce => {
         if (responce.data["access"] >= 3) {
           axios
-            .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/admin-panel")
+            .post(`${API_URL}/api/admin-panel`)
             .then(responce => {
               this.dataAdmin = responce.data;
             });
@@ -157,7 +158,7 @@ export default {
     deleteRules(id) {
       const $userID = id;
       axios
-        .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/delete-admin", {
+        .post(`${API_URL}/api/delete-admin`, {
           user_id: $userID
         })
         .then(response => {
@@ -170,7 +171,7 @@ export default {
     async submitHandler() {
       if (this.admin_id != "") {
         axios
-          .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/new-admin", {
+          .post(`${API_URL}/api/new-admin`, {
             admin_id: this.admin_id
           })
           .then(responce => {

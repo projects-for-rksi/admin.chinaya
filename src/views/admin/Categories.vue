@@ -82,6 +82,7 @@
 </style>
 
 <script>
+import { API_URL } from "@/api.config";
 import axios from "axios";
 import Multiselect from "vue-multiselect";
 
@@ -103,7 +104,7 @@ export default {
   }),
   created() {
     axios
-      .get("https://api.xn----7sba9au1d3c.xn--p1ai/api/categories")
+      .get(`${API_URL}/api/categories`)
       .then(responce => {
         this.categories = responce.data;
       });
@@ -113,7 +114,7 @@ export default {
       const $categoriesID = id;
       axios
         .post(
-          "https://api.xn----7sba9au1d3c.xn--p1ai/api/delete-categories/" +
+          `${API_URL}/api/delete-categories/` +
             $categoriesID
         )
         .then(response => {
@@ -133,7 +134,7 @@ export default {
     async submitHandler() {
       if (this.name_categories != "" && this.value2 != "") {
         axios
-          .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/new-categories", {
+          .post(`${API_URL}/api/new-categories`, {
             name_categories: this.name_categories,
             refers_category: this.value2
           })

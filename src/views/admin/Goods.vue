@@ -55,6 +55,7 @@
 </style>
 
 <script>
+import { API_URL } from "@/api.config";
 import axios from "axios";
 
 export default {
@@ -79,7 +80,7 @@ export default {
       const $productID = id;
       axios
         .post(
-          "https://api.xn----7sba9au1d3c.xn--p1ai/api/delete-good/" + $productID
+          `${API_URL}/api/delete-good/` + $productID
         )
         .then(response => {
           if (response.data["status"] == "error") {
@@ -98,7 +99,7 @@ export default {
   },
   created() {
     axios
-      .get("https://api.xn----7sba9au1d3c.xn--p1ai/api/goods")
+      .get(`${API_URL}/api/goods`)
       .then(responce => {
         this.goods = responce.data;
       });

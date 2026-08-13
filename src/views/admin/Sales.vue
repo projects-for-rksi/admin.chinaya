@@ -52,6 +52,7 @@
 </style>
 
 <script>
+import { API_URL } from "@/api.config";
 import axios from "axios";
 
 export default {
@@ -68,7 +69,7 @@ export default {
   }),
   created() {
     axios
-      .get("https://api.xn----7sba9au1d3c.xn--p1ai/api/sale")
+      .get(`${API_URL}/api/sale`)
       .then(responce => {
         this.sale = responce.data;
       });
@@ -78,7 +79,7 @@ export default {
       const $saleID = id;
       axios
         .post(
-          "https://api.xn----7sba9au1d3c.xn--p1ai/api/delete-sale/" + $saleID
+          `${API_URL}/api/delete-sale/` + $saleID
         )
         .then(responce => {
           this.sale = responce.data;
@@ -94,7 +95,7 @@ export default {
         this.value_sale.length <= 2
       ) {
         axios
-          .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/new-sale", {
+          .post(`${API_URL}/api/new-sale`, {
             name_sale: this.name_sale,
             value_sale: this.value_sale
           })

@@ -157,6 +157,7 @@
 </style>
 
 <script>
+import { API_URL } from "@/api.config";
 import axios from "axios";
 
 export default {
@@ -177,7 +178,7 @@ export default {
   },
   created() {
     axios
-      .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/order/" + this.id)
+      .post(`${API_URL}/api/order/` + this.id)
       .then(responce => {
         if (responce.data["status"] == "Error") {
           this.$router.push("/404");
@@ -191,7 +192,7 @@ export default {
   methods: {
     updateAction(id_order, select) {
       axios
-        .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/panel-action", {
+        .post(`${API_URL}/api/panel-action`, {
           id_order: id_order,
           select: select
         })
@@ -205,7 +206,7 @@ export default {
     addTrackCode() {
       if (this.trackcode != "") {
         axios
-          .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/add-trackcode", {
+          .post(`${API_URL}/api/add-trackcode`, {
             id_order: this.dataDelivery["id_order"],
             trackcode: this.trackcode
           })

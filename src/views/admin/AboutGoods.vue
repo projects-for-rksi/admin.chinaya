@@ -111,6 +111,7 @@
 </style>
 
 <script>
+import { API_URL } from "@/api.config";
 import axios from "axios";
 import Multiselect from "vue-multiselect";
 
@@ -134,7 +135,7 @@ export default {
   },
   created() {
     axios
-      .get("https://api.xn----7sba9au1d3c.xn--p1ai/api/goods/" + this.id)
+      .get(`${API_URL}/api/goods/` + this.id)
       .then(responce => {
         if (responce.data["status"] == "Error") {
           this.$router.push("/404");
@@ -143,12 +144,12 @@ export default {
         }
       });
     axios
-      .get("https://api.xn----7sba9au1d3c.xn--p1ai/api/categories")
+      .get(`${API_URL}/api/categories`)
       .then(responce => {
         this.categoriesProduct = responce.data;
       });
     axios
-      .get("https://api.xn----7sba9au1d3c.xn--p1ai/api/status-product")
+      .get(`${API_URL}/api/status-product`)
       .then(responce => {
         this.statusProduct = responce.data;
       });
@@ -160,7 +161,7 @@ export default {
     updateStatusProduct() {
       if (this.value != "") {
         axios
-          .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/update-status", {
+          .post(`${API_URL}/api/update-status`, {
             id_status: this.value,
             id_good: this.product[0]["id_good"]
           })
@@ -179,7 +180,7 @@ export default {
     addQuantityGood() {
       if (this.quantity != null) {
         axios
-          .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/add-quantity", {
+          .post(`${API_URL}/api/add-quantity`, {
             quantity: this.quantity,
             id_good: this.product[0]["id_good"]
           })

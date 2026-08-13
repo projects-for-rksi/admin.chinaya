@@ -51,6 +51,7 @@
 </template>
 
 <script>
+import { API_URL } from "@/api.config";
 import axios from "axios";
 
 export default {
@@ -64,7 +65,7 @@ export default {
   }),
   created() {
     axios
-      .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/orders")
+      .post(`${API_URL}/api/orders`)
       .then(responce => {
         this.dataOrders = responce.data;
       });
@@ -72,7 +73,7 @@ export default {
   methods: {
     deleteOrder(id_order) {
       axios
-        .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/delete-order", {
+        .post(`${API_URL}/api/delete-order`, {
           id_order: id_order
         })
         .then(responce => {

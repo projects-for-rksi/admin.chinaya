@@ -150,6 +150,7 @@
 </template>
 
 <script>
+import { API_URL } from "@/api.config";
 import axios from "axios";
 
 export default {
@@ -172,7 +173,7 @@ export default {
       this.openHeaderForMobile = true;
     }
     axios
-      .post("https://api.xn----7sba9au1d3c.xn--p1ai/api/user", {
+      .post(`${API_URL}/api/user`, {
         api_token: localStorage.getItem("api_token")
       })
       .then(responce => {
